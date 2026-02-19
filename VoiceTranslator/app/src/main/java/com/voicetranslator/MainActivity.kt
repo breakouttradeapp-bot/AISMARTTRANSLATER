@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private val audioPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
             if (granted) startVoiceInput()
-            else showError("Microphone permission required.")
+            else showError("Microphone permission required")
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -127,6 +127,26 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 }
                 override fun onNothingSelected(parent: AdapterView<*>?) {}
             }
+
+        // 🔥 SWAP BUTTON FIXED
+        binding.btnSwap.setOnClickListener {
+
+            val sourcePos = binding.spinnerSource.selectedItemPosition
+            val targetPos = binding.spinnerTarget.selectedItemPosition
+
+            binding.spinnerSource.setSelection(targetPos)
+            binding.spinnerTarget.setSelection(sourcePos)
+
+            val temp = prefs.sourceLang
+            prefs.sourceLang = prefs.targetLang
+            prefs.targetLang = temp
+
+            val input = binding.etInputText.text.toString()
+            val output = binding.tvTranslatedText.text.toString()
+
+            binding.etInputText.setText(output)
+            binding.tvTranslatedText.text = input
+        }
     }
 
     private fun setupClickListeners() {
@@ -202,12 +222,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
     }
 
+    // 🔥 FINAL MIC FIX
     private fun startVoiceInput() {
-
-        if (!SpeechRecognizer.isRecognitionAvailable(this)) {
-            showError("Speech recognition not available")
-            return
-        }
 
         speechRecognizer?.destroy()
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
@@ -215,20 +231,24 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
             RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, prefs.sourceLang)
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US")
+        intent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1)
 
         speechRecognizer?.setRecognitionListener(object : RecognitionListener {
 
+            override fun onReadyForSpeech(params: Bundle?) {
+                Toast.makeText(this@MainActivity,"Speak now...",Toast.LENGTH_SHORT).show()
+            }
+
             override fun onResults(results: Bundle?) {
-                val text = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.getOrNull(0)
-                if (!text.isNullOrEmpty()) binding.etInputText.setText(text)
+                val text = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.get(0)
+                if (text != null) binding.etInputText.setText(text)
             }
 
             override fun onError(error: Int) {
-                Toast.makeText(this@MainActivity,"Mic error",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity,"Mic not detecting voice",Toast.LENGTH_LONG).show()
             }
 
-            override fun onReadyForSpeech(p0: Bundle?) {}
             override fun onBeginningOfSpeech() {}
             override fun onRmsChanged(p0: Float) {}
             override fun onBufferReceived(p0: ByteArray?) {}
