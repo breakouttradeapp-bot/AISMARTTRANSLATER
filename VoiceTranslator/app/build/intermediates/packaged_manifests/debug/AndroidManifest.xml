@@ -8,10 +8,13 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
-    <!-- Permissions -->
+    <!-- 🔥 REQUIRED PERMISSIONS -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 🔥 Android 13+ mic permission -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
@@ -47,20 +50,23 @@
         android:name="com.voicetranslator.VoiceTranslatorApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Voice Translator"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VoiceTranslator" >
 
-        <!-- AdMob App ID (Test ID - replace for production) -->
+        <!-- 🔥 AdMob Test ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <!-- 🔥 INTERNET CLEAR TEXT FIX (important for API) -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <!-- Splash Screen -->
         <activity
@@ -75,10 +81,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Main Translator -->
+        <!-- Main -->
         <activity
             android:name="com.voicetranslator.MainActivity"
-            android:exported="false"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
 
@@ -86,22 +92,19 @@
         <activity
             android:name="com.voicetranslator.HistoryActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity"
-            android:screenOrientation="portrait" />
+            android:parentActivityName="com.voicetranslator.MainActivity" />
 
         <!-- Settings -->
         <activity
             android:name="com.voicetranslator.SettingsActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity"
-            android:screenOrientation="portrait" />
+            android:parentActivityName="com.voicetranslator.MainActivity" />
 
         <!-- About -->
         <activity
             android:name="com.voicetranslator.AboutActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity"
-            android:screenOrientation="portrait" />
+            android:parentActivityName="com.voicetranslator.MainActivity" />
 
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity

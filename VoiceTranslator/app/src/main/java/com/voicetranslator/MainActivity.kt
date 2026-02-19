@@ -7,12 +7,14 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
 import android.speech.tts.TextToSpeech
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -45,7 +47,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     companion object {
         private const val BANNER_AD_UNIT_ID =
-            "ca-app-pub-3940256099942544/6300978111" // Test Ad ID
+            "ca-app-pub-3940256099942544/6300978111"
     }
 
     private val audioPermissionLauncher =
@@ -100,7 +102,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
     }
 
+    // ✅ SPINNER SETUP WITH DEFAULT HINDI → ENGLISH
     private fun setupSpinners() {
+
         val adapter = ArrayAdapter(
             this,
             android.R.layout.simple_spinner_item,
@@ -110,6 +114,46 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         binding.spinnerSource.adapter = adapter
         binding.spinnerTarget.adapter = adapter
+
+        // Default Hindi → English
+        binding.spinnerSource.setSelection(LanguageUtils.getIndexByCode("hi"))
+        binding.spinnerTarget.setSelection(LanguageUtils.getIndexByCode("en"))
+
+        prefs.sourceLang = "hi"
+        prefs.targetLang = "en"
+
+        binding.spinnerSource.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    prefs.sourceLang = LanguageUtils.languages[position].second
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>?) {}
+            }
+
+        binding.spinnerTarget.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    prefs.targetLang = LanguageUtils.languages[position].second
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>?) {}
+            }
+
+        // ✅ Swap Button Working
+        binding.btnSwap.setOnClickListener {
+            val src = binding.spinnerSource.selectedItemPosition
+            val tgt = binding.spinnerTarget.selectedItemPosition
+
+            binding.spinnerSource.setSelection(tgt)
+            binding.spinnerTarget.setSelection(src)
+
+            val input = binding.etInputText.text.toString()
+            val output = binding.tvTranslatedText.text.toString()
+
+            binding.etInputText.setText(output)
+            binding.tvTranslatedText.text = input
+        }
     }
 
     private fun setupClickListeners() {
@@ -195,15 +239,49 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
     }
 
+    // ✅ FULLY WORKING MIC
     private fun startVoiceInput() {
+
         if (!SpeechRecognizer.isRecognitionAvailable(this)) {
-            showError("Speech recognition not available.")
+            showError("Speech recognition not available")
             return
         }
 
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
 
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+            RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, prefs.sourceLang)
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak now")
+
+        speechRecognizer?.setRecognitionListener(object : RecognitionListener {
+
+            override fun onResults(results: Bundle?) {
+                val text = results
+                    ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                    ?.getOrNull(0)
+
+                if (!text.isNullOrEmpty()) {
+                    binding.etInputText.setText(text)
+                }
+            }
+
+            override fun onError(error: Int) {
+                Toast.makeText(this@MainActivity,
+                    "Mic error",
+                    Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onReadyForSpeech(p0: Bundle?) {}
+            override fun onBeginningOfSpeech() {}
+            override fun onRmsChanged(p0: Float) {}
+            override fun onBufferReceived(p0: ByteArray?) {}
+            override fun onEndOfSpeech() {}
+            override fun onPartialResults(p0: Bundle?) {}
+            override fun onEvent(p0: Int, p1: Bundle?) {}
+        })
+
         speechRecognizer?.startListening(intent)
     }
 

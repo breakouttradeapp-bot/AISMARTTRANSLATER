@@ -21,6 +21,11 @@ class TranslationRepository(private val context: Context) {
         targetLang: String
     ): TranslationResult {
 
+        // 🚨 If same language selected → don't call API
+        if (sourceLang == targetLang) {
+            return TranslationResult.Success(text)
+        }
+
         return try {
 
             val request = TranslateRequest(
@@ -40,25 +45,17 @@ class TranslationRepository(private val context: Context) {
                     ?.data
                     ?.translations
                     ?.translatedText
-                    ?.getOrNull(0)
+                    ?.firstOrNull()
 
-                if (!translatedText.isNullOrBlank()) {
+                if (!translatedText.isNullOrEmpty()) {
                     saveToHistory(text, translatedText, sourceLang, targetLang)
                     TranslationResult.Success(translatedText)
                 } else {
-                    TranslationResult.Error("Translation empty from API")
+                    TranslationResult.Error("Translation failed")
                 }
 
             } else {
-
-                val errorMsg = when (response.code()) {
-                    401 -> "Invalid API key"
-                    403 -> "API subscription required"
-                    429 -> "API limit exceeded"
-                    else -> "Translation failed ${response.code()}"
-                }
-
-                TranslationResult.Error(errorMsg)
+                TranslationResult.Error("API Error ${response.code()}")
             }
 
         } catch (e: Exception) {
