@@ -13,36 +13,26 @@ import java.util.concurrent.TimeUnit
 
 // ─── Request / Response models ──────────────────────────────────────────────
 
-/**
- * Request payload sent to Deep Translate API.
- */
 data class TranslateRequest(
-    val q: String,        // Text to translate
-    val source: String,   // Source language code (e.g. "en")
-    val target: String    // Target language code (e.g. "es")
+    val q: String,
+    val source: String,
+    val target: String
 )
 
-/**
- * Top-level response from Deep Translate API.
- */
 data class TranslateResponse(
     val data: TranslateData?
 )
 
 data class TranslateData(
-    val translations: TranslationResult?
+    val translations: List<TranslationItem>?
 )
 
-data class TranslationResult(
+data class TranslationItem(
     val translatedText: String?
 )
 
 // ─── Retrofit Interface ──────────────────────────────────────────────────────
 
-/**
- * Retrofit API interface for Deep Translate v2.
- * API key injected via headers using BuildConfig for security.
- */
 interface TranslationApiService {
 
     @Headers(
@@ -58,19 +48,16 @@ interface TranslationApiService {
 
 // ─── Retrofit Singleton ──────────────────────────────────────────────────────
 
-/**
- * Singleton factory for building the Retrofit client.
- */
 object RetrofitClient {
 
     private const val BASE_URL = "https://deep-translate1.p.rapidapi.com/"
     private const val TIMEOUT_SECONDS = 30L
 
-    // OkHttp client with logging and timeouts
     private val okHttpClient: OkHttpClient by lazy {
         val logger = HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         }
+
         OkHttpClient.Builder()
             .addInterceptor(logger)
             .connectTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
@@ -79,7 +66,6 @@ object RetrofitClient {
             .build()
     }
 
-    // Retrofit instance
     val apiService: TranslationApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -89,3 +75,4 @@ object RetrofitClient {
             .create(TranslationApiService::class.java)
     }
 }
+
