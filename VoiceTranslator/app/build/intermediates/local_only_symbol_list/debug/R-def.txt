@@ -90,6 +90,7 @@ id toolbar
 id tv_api_key_info
 id tv_app_name
 id tv_count
+id tv_dev
 id tv_input_text
 id tv_language_pair
 id tv_privacy_policy

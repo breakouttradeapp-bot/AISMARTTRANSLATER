@@ -27,16 +27,21 @@ public final class ActivitySplashBinding implements ViewBinding {
   public final TextView tvAppName;
 
   @NonNull
+  public final TextView tvDev;
+
+  @NonNull
   public final TextView tvTagline;
 
   @NonNull
   public final TextView tvVersion;
 
   private ActivitySplashBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView ivLogo,
-      @NonNull TextView tvAppName, @NonNull TextView tvTagline, @NonNull TextView tvVersion) {
+      @NonNull TextView tvAppName, @NonNull TextView tvDev, @NonNull TextView tvTagline,
+      @NonNull TextView tvVersion) {
     this.rootView = rootView;
     this.ivLogo = ivLogo;
     this.tvAppName = tvAppName;
+    this.tvDev = tvDev;
     this.tvTagline = tvTagline;
     this.tvVersion = tvVersion;
   }
@@ -80,6 +85,12 @@ public final class ActivitySplashBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_dev;
+      TextView tvDev = ViewBindings.findChildViewById(rootView, id);
+      if (tvDev == null) {
+        break missingId;
+      }
+
       id = R.id.tv_tagline;
       TextView tvTagline = ViewBindings.findChildViewById(rootView, id);
       if (tvTagline == null) {
@@ -92,8 +103,8 @@ public final class ActivitySplashBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySplashBinding((ConstraintLayout) rootView, ivLogo, tvAppName, tvTagline,
-          tvVersion);
+      return new ActivitySplashBinding((ConstraintLayout) rootView, ivLogo, tvAppName, tvDev,
+          tvTagline, tvVersion);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
