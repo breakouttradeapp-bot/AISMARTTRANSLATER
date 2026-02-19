@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Voice Translator</string>
+    <string name="app_tagline">AI-Powered • 100+ Languages</string>
+
+    <!-- Main Screen -->
+    <string name="btn_translate">Translate</string>
+    <string name="btn_mic">Voice Input</string>
+    <string name="btn_swap">Swap Languages</string>
+    <string name="btn_speak">Speak</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_clear">Clear</string>
+
+    <string name="input_hint">Enter or speak text to translate…</string>
+    <string name="translation_hint">Translation will appear here…</string>
+    <string name="listening_hint">Listening…</string>
+
+    <!-- Language Labels -->
+    <string name="source_language">Source Language</string>
+    <string name="target_language">Target Language</string>
+
+    <!-- History -->
+    <string name="history_title">Translation History</string>
+    <string name="history_empty">No translations yet</string>
+    <string name="history_empty_subtitle">Your translation history will appear here</string>
+    <string name="btn_clear_all">Clear All</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="pref_theme">Theme</string>
+    <string name="pref_tts">Auto-Speak Translation</string>
+    <string name="pref_tts_speed">Speech Speed</string>
+    <string name="pref_clear_history">Clear Translation History</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="btn_rate">Rate on Play Store</string>
+    <string name="btn_share">Share App</string>
+
+    <!-- Errors -->
+    <string name="error_no_internet">No internet connection. Please check your network settings.</string>
+    <string name="error_empty_text">Please enter text to translate.</string>
+    <string name="error_api_key">API key not configured. Please add your RapidAPI key.</string>
+    <string name="error_mic_permission">Microphone permission required for voice input.</string>
+    <string name="error_speech_unavailable">Speech recognition not available on this device.</string>
+
+    <!-- Permissions -->
+    <string name="permission_mic_title">Microphone Permission</string>
+    <string name="permission_mic_message">Microphone access is needed to convert your speech to text.</string>
+
+    <!-- Snackbars -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="translation_saved">Translation saved</string>
+    <string name="history_cleared">History cleared</string>
+
+    <!-- Descriptions -->
+    <string name="desc_logo">App Logo</string>
+    <string name="desc_mic_btn">Voice Input Button</string>
+    <string name="desc_swap_btn">Swap Languages</string>
+    <string name="desc_speak_btn">Speak Translation</string>
+    <string name="desc_copy_btn">Copy Translation</string>
+    <string name="desc_delete_btn">Delete Translation</string>
+</resources>

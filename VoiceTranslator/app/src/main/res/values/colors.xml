@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary Colors -->
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="primary_light">#3B82F6</color>
+    <color name="primary_container">#DBEAFE</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#1E3A8A</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#7C3AED</color>
+    <color name="secondary_dark">#6D28D9</color>
+    <color name="secondary_container">#EDE9FE</color>
+    <color name="on_secondary_container">#4C1D95</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#2563EB</color>
+    <color name="gradient_end">#7C3AED</color>
+    <color name="gradient_mid">#4F46E5</color>
+
+    <!-- Surface colors (light theme) -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1F5F9</color>
+    <color name="on_surface">#0F172A</color>
+    <color name="on_surface_variant">#475569</color>
+    <color name="outline">#94A3B8</color>
+    <color name="outline_variant">#E2E8F0</color>
+
+    <!-- Surface colors (dark theme) -->
+    <color name="surface_dark">#0F172A</color>
+    <color name="surface_variant_dark">#1E293B</color>
+    <color name="on_surface_dark">#F8FAFC</color>
+
+    <!-- Status Colors -->
+    <color name="error">#EF4444</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FEE2E2</color>
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+
+    <!-- Text -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_hint">#94A3B8</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_text">#FFFFFF</color>
+
+    <!-- Background -->
+    <color name="background">#F8FAFC</color>
+    <color name="background_dark">#020617</color>
+
+    <!-- Status bar -->
+    <color name="status_bar">#1D4ED8</color>
+</resources>
