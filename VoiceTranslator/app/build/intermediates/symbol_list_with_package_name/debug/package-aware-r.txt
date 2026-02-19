@@ -3392,6 +3392,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appName
 id app_bar
 id arc
 id asConfigured
@@ -3485,6 +3486,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dev
 id dialog_button
 id dimensions
 id direct
@@ -3571,7 +3573,6 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
-id iv_logo
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3587,6 +3588,7 @@ id linear
 id listMode
 id list_item
 id locale
+id logo
 id lottie_layer_name
 id ltr
 id m3_side_sheet
@@ -3794,6 +3796,7 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
+id sub
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3847,13 +3850,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_api_key_info
-id tv_app_name
 id tv_count
-id tv_dev
 id tv_input_text
 id tv_language_pair
 id tv_privacy_policy
-id tv_tagline
 id tv_terms
 id tv_timestamp
 id tv_translated_text
@@ -3865,6 +3865,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id version
 id vertical_only
 id view_offset_helper
 id view_transition

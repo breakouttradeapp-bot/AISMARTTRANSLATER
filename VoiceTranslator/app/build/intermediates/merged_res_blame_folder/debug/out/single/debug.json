@@ -1,134 +1,138 @@
 [
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/anim_slide_up_fade_in.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/anim/slide_up_fade_in.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_volume_up.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_volume_up.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/font_poppins_bold.ttf.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/font/poppins_bold.ttf"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_copy.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_copy.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_swap_horiz.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_swap_horiz.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_translate_logo.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_translate_logo.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/font_poppins_regular.ttf.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/font/poppins_regular.ttf"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_delete_sweep.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_delete_sweep.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_translate_logo.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_translate_logo.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/menu_menu_main.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/menu/menu_main.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_activity_about.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_about.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_error.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_error.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_spinner_bg.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/spinner_bg.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/xml_backup_rules.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/xml/backup_rules.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_error.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_error.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_history_empty.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_history_empty.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_translate_white.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_translate_white.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_toolbar_gradient.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/toolbar_gradient.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/anim_fade_in_slow.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/anim/fade_in_slow.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/anim_fade_in_slow.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/anim/fade_in_slow.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/anim_scale_in_bounce.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/anim/scale_in_bounce.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_spinner_bg.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/spinner_bg.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_volume_up.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_volume_up.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/layout_activity_main.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_main.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_history_empty.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_history_empty.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_swap_horiz.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_swap_horiz.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_btn_gradient.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/btn_gradient.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_delete.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_delete.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_delete.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_delete.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/layout_activity_about.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_about.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_toolbar_gradient.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/toolbar_gradient.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_mic.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_mic.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/font_poppins_regular.ttf.flat",
-        "source": "com.voicetranslator.app-main-56:/font/poppins_regular.ttf"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_activity_main.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_main.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_ic_translate_white.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/ic_translate_white.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/font_poppins.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/font/poppins.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/layout_activity_settings.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_settings.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_activity_settings.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/layout_activity_history.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_history.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_copy.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_copy.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/anim_scale_in_bounce.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/anim/scale_in_bounce.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_lang_badge_bg.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/lang_badge_bg.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_delete_sweep.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_delete_sweep.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/xml_data_extraction_rules.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/anim_rotate_360.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/anim/rotate_360.xml"
     },
     {
         "merged": "com.voicetranslator.app-merged_res-54:/layout_activity_splash.xml.flat",
         "source": "com.voicetranslator.app-main-56:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/xml_data_extraction_rules.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/xml/data_extraction_rules.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_activity_splash.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/anim_rotate_360.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/anim/rotate_360.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_item_history.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/item_history.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_lang_badge_bg.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/lang_badge_bg.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_splash_gradient.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/splash_gradient.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/anim_slide_up_fade_in.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/anim/slide_up_fade_in.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/xml_backup_rules.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_btn_gradient.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/btn_gradient.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/layout_activity_history.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_history.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/layout_item_history.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/layout/item_history.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/menu_menu_main.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/menu/menu_main.xml"
     },
     {
-        "merged": "com.voicetranslator.app-merged_res-54:/font_poppins.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/font/poppins.xml"
-    },
-    {
-        "merged": "com.voicetranslator.app-merged_res-54:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "com.voicetranslator.app-merged_res-54:/drawable_splash_gradient.xml.flat",
-        "source": "com.voicetranslator.app-main-56:/drawable/splash_gradient.xml"
-    },
-    {
-        "merged": "com.voicetranslator.app-merged_res-54:/font_poppins_bold.ttf.flat",
-        "source": "com.voicetranslator.app-main-56:/font/poppins_bold.ttf"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-merged_res-54:/drawable_ic_mic.xml.flat",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/drawable/ic_mic.xml"
     }
 ]

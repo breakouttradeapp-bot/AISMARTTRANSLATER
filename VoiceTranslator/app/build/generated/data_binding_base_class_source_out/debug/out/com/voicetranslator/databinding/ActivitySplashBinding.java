@@ -21,29 +21,29 @@ public final class ActivitySplashBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView ivLogo;
+  public final TextView appName;
 
   @NonNull
-  public final TextView tvAppName;
+  public final TextView dev;
 
   @NonNull
-  public final TextView tvDev;
+  public final ImageView logo;
 
   @NonNull
-  public final TextView tvTagline;
+  public final TextView sub;
 
   @NonNull
-  public final TextView tvVersion;
+  public final TextView version;
 
-  private ActivitySplashBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView ivLogo,
-      @NonNull TextView tvAppName, @NonNull TextView tvDev, @NonNull TextView tvTagline,
-      @NonNull TextView tvVersion) {
+  private ActivitySplashBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
+      @NonNull TextView dev, @NonNull ImageView logo, @NonNull TextView sub,
+      @NonNull TextView version) {
     this.rootView = rootView;
-    this.ivLogo = ivLogo;
-    this.tvAppName = tvAppName;
-    this.tvDev = tvDev;
-    this.tvTagline = tvTagline;
-    this.tvVersion = tvVersion;
+    this.appName = appName;
+    this.dev = dev;
+    this.logo = logo;
+    this.sub = sub;
+    this.version = version;
   }
 
   @Override
@@ -73,38 +73,38 @@ public final class ActivitySplashBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.iv_logo;
-      ImageView ivLogo = ViewBindings.findChildViewById(rootView, id);
-      if (ivLogo == null) {
+      id = R.id.appName;
+      TextView appName = ViewBindings.findChildViewById(rootView, id);
+      if (appName == null) {
         break missingId;
       }
 
-      id = R.id.tv_app_name;
-      TextView tvAppName = ViewBindings.findChildViewById(rootView, id);
-      if (tvAppName == null) {
+      id = R.id.dev;
+      TextView dev = ViewBindings.findChildViewById(rootView, id);
+      if (dev == null) {
         break missingId;
       }
 
-      id = R.id.tv_dev;
-      TextView tvDev = ViewBindings.findChildViewById(rootView, id);
-      if (tvDev == null) {
+      id = R.id.logo;
+      ImageView logo = ViewBindings.findChildViewById(rootView, id);
+      if (logo == null) {
         break missingId;
       }
 
-      id = R.id.tv_tagline;
-      TextView tvTagline = ViewBindings.findChildViewById(rootView, id);
-      if (tvTagline == null) {
+      id = R.id.sub;
+      TextView sub = ViewBindings.findChildViewById(rootView, id);
+      if (sub == null) {
         break missingId;
       }
 
-      id = R.id.tv_version;
-      TextView tvVersion = ViewBindings.findChildViewById(rootView, id);
-      if (tvVersion == null) {
+      id = R.id.version;
+      TextView version = ViewBindings.findChildViewById(rootView, id);
+      if (version == null) {
         break missingId;
       }
 
-      return new ActivitySplashBinding((ConstraintLayout) rootView, ivLogo, tvAppName, tvDev,
-          tvTagline, tvVersion);
+      return new ActivitySplashBinding((ConstraintLayout) rootView, appName, dev, logo, sub,
+          version);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

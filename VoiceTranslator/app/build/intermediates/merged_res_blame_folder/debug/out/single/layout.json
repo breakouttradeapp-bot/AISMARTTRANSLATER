@@ -1,26 +1,30 @@
 [
     {
-        "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/activity_settings.xml",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_settings.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_main.xml"
     },
     {
         "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/activity_splash.xml",
         "source": "com.voicetranslator.app-main-56:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/activity_history.xml",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_history.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/activity_about.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_about.xml"
     },
     {
-        "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/activity_main.xml",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_main.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/activity_splash.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/activity_about.xml",
-        "source": "com.voicetranslator.app-main-56:/layout/activity_about.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/activity_settings.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.voicetranslator.app-mergeDebugResources-53:/layout/item_history.xml",
-        "source": "com.voicetranslator.app-main-56:/layout/item_history.xml"
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/item_history.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/item_history.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.5/com.voicetranslator.app-mergeDebugResources-53:/layout/activity_history.xml",
+        "source": "/root/.gradle/daemon/8.5/com.voicetranslator.app-main-56:/layout/activity_history.xml"
     }
 ]

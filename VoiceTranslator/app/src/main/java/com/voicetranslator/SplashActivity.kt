@@ -10,10 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.voicetranslator.databinding.ActivitySplashBinding
 
-/**
- * SplashActivity — premium animated launcher screen.
- * Displays for 2.5 seconds before launching MainActivity.
- */
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
@@ -24,17 +20,16 @@ class SplashActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Install system splash screen (Android 12+)
+
+        // Android 12 splash
         installSplashScreen()
 
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Animate logo and title
         startAnimations()
 
-        // Navigate to MainActivity after splash duration
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
@@ -42,27 +37,31 @@ class SplashActivity : AppCompatActivity() {
         }, SPLASH_DURATION_MS)
     }
 
-    /**
-     * Runs entrance animations on logo, title, and tagline views.
-     */
     private fun startAnimations() {
-        // Logo scale-in bounce animation
-        val logoAnim = AnimationUtils.loadAnimation(this, R.anim.scale_in_bounce)
-        binding.ivLogo.startAnimation(logoAnim)
 
-        // Title slide up (delayed)
+        // Logo animation
+        val logoAnim = AnimationUtils.loadAnimation(this, R.anim.scale_in_bounce)
+        binding.logo.startAnimation(logoAnim)
+
+        // App name animation
         val titleAnim = AnimationUtils.loadAnimation(this, R.anim.slide_up_fade_in)
         titleAnim.startOffset = 300
-        binding.tvAppName.startAnimation(titleAnim)
+        binding.appName.startAnimation(titleAnim)
 
-        // Tagline slide up (more delay)
-        val taglineAnim = AnimationUtils.loadAnimation(this, R.anim.slide_up_fade_in)
-        taglineAnim.startOffset = 500
-        binding.tvTagline.startAnimation(taglineAnim)
+        // Subtitle animation
+        val subAnim = AnimationUtils.loadAnimation(this, R.anim.slide_up_fade_in)
+        subAnim.startOffset = 500
+        binding.sub.startAnimation(subAnim)
 
-        // Version text fade in
+        // Developed by animation
+        val devAnim = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
+        devAnim.startOffset = 700
+        binding.dev.startAnimation(devAnim)
+
+        // Version animation
         val versionAnim = AnimationUtils.loadAnimation(this, R.anim.fade_in_slow)
-        versionAnim.startOffset = 800
-        binding.tvVersion.startAnimation(versionAnim)
+        versionAnim.startOffset = 900
+        binding.version.startAnimation(versionAnim)
     }
 }
+
