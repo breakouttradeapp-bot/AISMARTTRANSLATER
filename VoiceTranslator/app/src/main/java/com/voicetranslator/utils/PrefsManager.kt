@@ -20,14 +20,14 @@ class PrefsManager(context: Context) {
         private const val KEY_TRANSLATION_COUNT = "translation_count"
     }
 
-    // Source language (default English)
+    // 🔥 Source language (Default = Hindi)
     var sourceLang: String
-        get() = prefs.getString(KEY_SOURCE_LANG, "en") ?: "en"
+        get() = prefs.getString(KEY_SOURCE_LANG, "hi") ?: "hi"
         set(value) = prefs.edit().putString(KEY_SOURCE_LANG, value).apply()
 
-    // Target language (default Spanish)
+    // 🔥 Target language (Default = English)
     var targetLang: String
-        get() = prefs.getString(KEY_TARGET_LANG, "es") ?: "es"
+        get() = prefs.getString(KEY_TARGET_LANG, "en") ?: "en"
         set(value) = prefs.edit().putString(KEY_TARGET_LANG, value).apply()
 
     // 0 = system default, 1 = light, 2 = dark
@@ -58,3 +58,4 @@ class PrefsManager(context: Context) {
         translationCount = 0
     }
 }
+
