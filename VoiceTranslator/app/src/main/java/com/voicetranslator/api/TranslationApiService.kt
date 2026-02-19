@@ -11,28 +11,27 @@ import retrofit2.http.Headers
 import retrofit2.http.POST
 import java.util.concurrent.TimeUnit
 
-// ─── Request / Response models ──────────────────────────────────────────────
-
+// 🔥 REQUEST
 data class TranslateRequest(
     val q: String,
     val source: String,
     val target: String
 )
 
+// 🔥 RESPONSE (IMPORTANT FIX)
 data class TranslateResponse(
     val data: TranslateData?
 )
 
 data class TranslateData(
-    val translations: List<TranslationItem>?
+    val translations: Translations?
 )
 
-data class TranslationItem(
-    val translatedText: String?
+data class Translations(
+    val translatedText: List<String>?   // ARRAY
 )
 
-// ─── Retrofit Interface ──────────────────────────────────────────────────────
-
+// 🔥 API SERVICE
 interface TranslationApiService {
 
     @Headers(
@@ -46,30 +45,26 @@ interface TranslationApiService {
     ): Response<TranslateResponse>
 }
 
-// ─── Retrofit Singleton ──────────────────────────────────────────────────────
-
+// 🔥 RETROFIT CLIENT
 object RetrofitClient {
 
     private const val BASE_URL = "https://deep-translate1.p.rapidapi.com/"
-    private const val TIMEOUT_SECONDS = 30L
 
-    private val okHttpClient: OkHttpClient by lazy {
-        val logger = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
-        }
+    private val client: OkHttpClient by lazy {
+        val log = HttpLoggingInterceptor()
+        log.level = HttpLoggingInterceptor.Level.BODY
 
         OkHttpClient.Builder()
-            .addInterceptor(logger)
-            .connectTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
-            .readTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
-            .writeTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
+            .addInterceptor(log)
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
             .build()
     }
 
     val apiService: TranslationApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
-            .client(okHttpClient)
+            .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(TranslationApiService::class.java)

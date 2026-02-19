@@ -36,14 +36,11 @@ class TranslationRepository(private val context: Context) {
 
             if (response.isSuccessful) {
 
-                val body = response.body()
-
-                // 🔥 FIX: translations is ARRAY
-                val translatedText = body
+                val translatedText = response.body()
                     ?.data
                     ?.translations
-                    ?.getOrNull(0)
                     ?.translatedText
+                    ?.getOrNull(0)
 
                 if (!translatedText.isNullOrBlank()) {
                     saveToHistory(text, translatedText, sourceLang, targetLang)
@@ -58,17 +55,12 @@ class TranslationRepository(private val context: Context) {
                     401 -> "Invalid API key"
                     403 -> "API subscription required"
                     429 -> "API limit exceeded"
-                    500 -> "Server error"
                     else -> "Translation failed ${response.code()}"
                 }
 
                 TranslationResult.Error(errorMsg)
             }
 
-        } catch (e: java.net.UnknownHostException) {
-            TranslationResult.Error("No internet connection")
-        } catch (e: java.net.SocketTimeoutException) {
-            TranslationResult.Error("Connection timeout")
         } catch (e: Exception) {
             TranslationResult.Error("Error: ${e.message}")
         }
