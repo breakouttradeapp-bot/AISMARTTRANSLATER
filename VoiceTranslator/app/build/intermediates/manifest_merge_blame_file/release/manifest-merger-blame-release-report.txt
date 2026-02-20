@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.voicetranslator"
+3    package="com.niv.aivoicetranslator"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -10,19 +10,19 @@
 10
 11    <!-- 🔥 REQUIRED PERMISSIONS -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:5-66
-12-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:22-64
+12-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:6:5-66
+12-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-13-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:5-70
-13-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:22-68
+13-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:5-70
+13-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:22-68
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:9:5-78
-14-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:9:22-76
+14-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:5-78
+14-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:22-76
 15
 16    <!-- 🔥 Android 13+ mic permission -->
 17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-17-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:12:5-97
-17-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:12:22-74
+17-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:11:5-97
+17-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:11:22-74
 18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 18-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:26:5-79
 18-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:26:22-76
@@ -73,115 +73,115 @@
 42
 43    <permission
 43-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-44        android:name="com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44        android:name="com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 44-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 45        android:protectionLevel="signature" />
 45-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 46
-47    <uses-permission android:name="com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47    <uses-permission android:name="com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 47-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 47-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 48
 49    <application
-49-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:14:5-71:19
-50        android:name="com.voicetranslator.VoiceTranslatorApp"
-50-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:15:9-43
+49-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:13:5-70:19
+50        android:name="com.niv.aivoicetranslator.VoiceTranslatorApp"
+50-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:14:9-43
 51        android:allowBackup="true"
-51-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:16:9-35
+51-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:15:9-35
 52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 52-->[androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 53        android:extractNativeLibs="false"
 54        android:icon="@mipmap/ic_launcher"
-54-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:17:9-43
+54-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:16:9-43
 55        android:label="Voice Translator"
-55-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:18:9-41
+55-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:17:9-41
 56        android:roundIcon="@mipmap/ic_launcher_round"
-56-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:19:9-54
+56-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:18:9-54
 57        android:supportsRtl="true"
-57-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:20:9-35
+57-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:19:9-35
 58        android:theme="@style/Theme.VoiceTranslator" >
-58-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:21:9-53
+58-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:20:9-53
 59
 60        <!-- 🔥 AdMob Test ID -->
 61        <meta-data
-61-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:25:9-27:69
+61-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:24:9-26:69
 62            android:name="com.google.android.gms.ads.APPLICATION_ID"
-62-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:26:13-69
+62-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:25:13-69
 63            android:value="ca-app-pub-3940256099942544~3347511713" />
-63-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:27:13-67
+63-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:26:13-67
 64
 65        <!-- 🔥 INTERNET CLEAR TEXT FIX (important for API) -->
 66        <uses-library
-66-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:9-87
+66-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:9-87
 67            android:name="org.apache.http.legacy"
-67-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:23-60
+67-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:23-60
 68            android:required="false" />
-68-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:61-85
+68-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:61-85
 69
 70        <!-- Splash Screen -->
 71        <activity
-71-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:33:9-44:20
-72            android:name="com.voicetranslator.SplashActivity"
-72-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:34:13-43
+71-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:32:9-43:20
+72            android:name="com.niv.aivoicetranslator.SplashActivity"
+72-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:33:13-43
 73            android:exported="true"
-73-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:35:13-36
+73-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:34:13-36
 74            android:screenOrientation="portrait"
-74-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:37:13-49
+74-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:36:13-49
 75            android:theme="@style/Theme.VoiceTranslator.Splash" >
-75-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:36:13-64
+75-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:35:13-64
 76            <intent-filter>
-76-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:13-42:29
+76-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:38:13-41:29
 77                <action android:name="android.intent.action.MAIN" />
-77-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:17-68
-77-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:25-66
+77-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:17-68
+77-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:25-66
 78
 79                <category android:name="android.intent.category.LAUNCHER" />
-79-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:41:17-76
-79-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:41:27-74
+79-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:17-76
+79-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:27-74
 80            </intent-filter>
 81        </activity>
 82
 83        <!-- Main -->
 84        <activity
-84-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:47:9-51:57
-85            android:name="com.voicetranslator.MainActivity"
-85-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:48:13-41
+84-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:46:9-50:57
+85            android:name="com.niv.aivoicetranslator.MainActivity"
+85-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:47:13-41
 86            android:exported="true"
-86-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:49:13-36
+86-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:48:13-36
 87            android:screenOrientation="portrait"
-87-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:50:13-49
+87-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:49:13-49
 88            android:windowSoftInputMode="adjustResize" />
-88-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:51:13-55
+88-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:50:13-55
 89
 90        <!-- History -->
 91        <activity
-91-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:54:9-57:57
-92            android:name="com.voicetranslator.HistoryActivity"
-92-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:55:13-44
+91-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:53:9-56:57
+92            android:name="com.niv.aivoicetranslator.HistoryActivity"
+92-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:54:13-44
 93            android:exported="false"
-93-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:56:13-37
-94            android:parentActivityName="com.voicetranslator.MainActivity" />
-94-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:57:13-55
+93-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:55:13-37
+94            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
+94-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:56:13-55
 95
 96        <!-- Settings -->
 97        <activity
-97-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:60:9-63:57
-98            android:name="com.voicetranslator.SettingsActivity"
-98-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:61:13-45
+97-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:59:9-62:57
+98            android:name="com.niv.aivoicetranslator.SettingsActivity"
+98-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:60:13-45
 99            android:exported="false"
-99-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:62:13-37
-100            android:parentActivityName="com.voicetranslator.MainActivity" />
-100-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:63:13-55
+99-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:61:13-37
+100            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
+100-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:62:13-55
 101
 102        <!-- About -->
 103        <activity
-103-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:66:9-69:57
-104            android:name="com.voicetranslator.AboutActivity"
-104-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:67:13-42
+103-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:65:9-68:57
+104            android:name="com.niv.aivoicetranslator.AboutActivity"
+104-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:66:13-42
 105            android:exported="false"
-105-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:68:13-37
-106            android:parentActivityName="com.voicetranslator.MainActivity" />
-106-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:69:13-55
+105-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:67:13-37
+106            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
+106-->/root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:68:13-55
 107
 108        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
 109        <activity
@@ -199,7 +199,7 @@
 115-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:63:9-68:43
 116            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
 116-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:64:13-76
-117            android:authorities="com.voicetranslator.mobileadsinitprovider"
+117            android:authorities="com.niv.aivoicetranslator.mobileadsinitprovider"
 117-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:65:13-73
 118            android:exported="false"
 118-->[com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:66:13-37
@@ -265,7 +265,7 @@
 151-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 152            android:name="androidx.startup.InitializationProvider"
 152-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-153            android:authorities="com.voicetranslator.androidx-startup"
+153            android:authorities="com.niv.aivoicetranslator.androidx-startup"
 153-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 154            android:exported="false" >
 154-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/transforms-3/88f2265835e82cd6001e4ad6e8e26fc6/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37

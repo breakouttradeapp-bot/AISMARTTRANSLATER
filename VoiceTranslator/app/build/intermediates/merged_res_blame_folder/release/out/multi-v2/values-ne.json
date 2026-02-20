@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.voicetranslator.app-mergeReleaseResources-52:/values-ne/values-ne.xml",
+            "outputFile": "com.niv.aivoicetranslator.app-mergeReleaseResources-52:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-3/7d481c1da8dec39a3bcc63ecc39e9ee2/transformed/browser-1.4.0/res/values-ne/values-ne.xml",

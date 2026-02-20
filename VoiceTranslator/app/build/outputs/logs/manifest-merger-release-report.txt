@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-73:12
-INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-73:12
-INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-73:12
-INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-73:12
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-72:12
+INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-72:12
+INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-72:12
+INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:1-72:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] /root/.gradle/caches/transforms-3/fad0fc5a0f1ddcd541a5c6a41eb2ef5a/transformed/viewbinding-8.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/79273ccf3ed2379c73f93d1b4e436f68/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /root/.gradle/caches/transforms-3/6b0cb260c03ae61c4621df13426a15d9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -80,30 +80,29 @@ MERGED from [androidx.print:print:1.0.0] /root/.gradle/caches/transforms-3/a1485
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /root/.gradle/caches/transforms-3/7e66a0d2739446c17bc21c0b768d105a/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.1.0] /root/.gradle/caches/transforms-3/f36986d68f4002a1b03e1e3748d42e0f/transformed/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
 	package
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:4:5-51
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:5-66
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:6:5-66
 MERGED from [com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /root/.gradle/caches/transforms-3/ee3564a0a50ccbd9585a41b1f62d2461/transformed/play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /root/.gradle/caches/transforms-3/ee3564a0a50ccbd9585a41b1f62d2461/transformed/play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:22-64
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:5-70
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:5-70
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:22-68
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:7:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:9:5-78
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:5-78
 MERGED from [com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:23.0.0] /root/.gradle/caches/transforms-3/0dd729a4c9842834b557fe9862cfcc06/transformed/play-services-ads-lite-23.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /root/.gradle/caches/transforms-3/ee3564a0a50ccbd9585a41b1f62d2461/transformed/play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:24:5-79
@@ -111,16 +110,16 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /r
 MERGED from [androidx.work:work-runtime:2.7.0] /root/.gradle/caches/transforms-3/978c4501ff6ddad8eb624216998b6b0b/transformed/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
 MERGED from [androidx.work:work-runtime:2.7.0] /root/.gradle/caches/transforms-3/978c4501ff6ddad8eb624216998b6b0b/transformed/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:12:5-97
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:11:5-97
 	tools:targetApi
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:12:75-95
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:11:75-95
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:12:22-74
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:11:22-74
 application
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:14:5-71:19
-INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:14:5-71:19
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:13:5-70:19
+INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:13:5-70:19
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/79273ccf3ed2379c73f93d1b4e436f68/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /root/.gradle/caches/transforms-3/79273ccf3ed2379c73f93d1b4e436f68/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /root/.gradle/caches/transforms-3/6b0cb260c03ae61c4621df13426a15d9/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -168,87 +167,87 @@ MERGED from [androidx.room:room-runtime:2.2.5] /root/.gradle/caches/transforms-3
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:20:9-35
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:17:9-41
 	android:roundIcon
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:19:9-54
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:18:9-54
 	tools:targetApi
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:22:9-29
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:21:9-29
 	android:icon
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:17:9-43
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:21:9-53
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:20:9-53
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:14:9-43
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:25:9-27:69
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:24:9-26:69
 	android:value
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:27:13-67
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:26:13-67
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:26:13-69
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:25:13-69
 uses-library#org.apache.http.legacy
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:9-87
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:9-87
 	android:required
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:61-85
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:61-85
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:30:23-60
-activity#com.voicetranslator.SplashActivity
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:33:9-44:20
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:29:23-60
+activity#com.niv.aivoicetranslator.SplashActivity
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:32:9-43:20
 	android:screenOrientation
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:37:13-49
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:36:13-49
 	android:exported
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:35:13-36
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:34:13-36
 	android:theme
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:36:13-64
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:35:13-64
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:34:13-43
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:33:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:13-42:29
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:38:13-41:29
 action#android.intent.action.MAIN
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:17-68
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:17-68
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:41:17-76
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:41:27-74
-activity#com.voicetranslator.MainActivity
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:47:9-51:57
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:40:27-74
+activity#com.niv.aivoicetranslator.MainActivity
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:46:9-50:57
 	android:screenOrientation
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:50:13-49
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:49:13-49
 	android:windowSoftInputMode
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:51:13-55
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:50:13-55
 	android:exported
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:49:13-36
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:48:13-41
-activity#com.voicetranslator.HistoryActivity
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:54:9-57:57
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:47:13-41
+activity#com.niv.aivoicetranslator.HistoryActivity
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:53:9-56:57
 	android:parentActivityName
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:57:13-55
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:56:13-55
 	android:exported
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:56:13-37
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:55:13-44
-activity#com.voicetranslator.SettingsActivity
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:60:9-63:57
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:54:13-44
+activity#com.niv.aivoicetranslator.SettingsActivity
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:59:9-62:57
 	android:parentActivityName
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:63:13-55
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:62:13-55
 	android:exported
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:62:13-37
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:61:13-45
-activity#com.voicetranslator.AboutActivity
-ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:66:9-69:57
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:60:13-45
+activity#com.niv.aivoicetranslator.AboutActivity
+ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:65:9-68:57
 	android:parentActivityName
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:69:13-55
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:68:13-55
 	android:exported
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:68:13-37
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:67:13-42
+		ADDED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml:66:13-42
 uses-sdk
 INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /root/AISMARTTRANSLATER/VoiceTranslator/app/src/main/AndroidManifest.xml
@@ -794,7 +793,7 @@ ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b309
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
@@ -804,7 +803,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /root/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94

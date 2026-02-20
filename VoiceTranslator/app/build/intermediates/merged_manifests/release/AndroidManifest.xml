@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.voicetranslator"
+    package="com.niv.aivoicetranslator"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -41,13 +41,13 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.voicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.niv.aivoicetranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.voicetranslator.VoiceTranslatorApp"
+        android:name="com.niv.aivoicetranslator.VoiceTranslatorApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:extractNativeLibs="false"
@@ -69,7 +69,7 @@
 
         <!-- Splash Screen -->
         <activity
-            android:name="com.voicetranslator.SplashActivity"
+            android:name="com.niv.aivoicetranslator.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.VoiceTranslator.Splash" >
@@ -82,28 +82,28 @@
 
         <!-- Main -->
         <activity
-            android:name="com.voicetranslator.MainActivity"
+            android:name="com.niv.aivoicetranslator.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- History -->
         <activity
-            android:name="com.voicetranslator.HistoryActivity"
+            android:name="com.niv.aivoicetranslator.HistoryActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity" />
+            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
 
         <!-- Settings -->
         <activity
-            android:name="com.voicetranslator.SettingsActivity"
+            android:name="com.niv.aivoicetranslator.SettingsActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity" />
+            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
 
         <!-- About -->
         <activity
-            android:name="com.voicetranslator.AboutActivity"
+            android:name="com.niv.aivoicetranslator.AboutActivity"
             android:exported="false"
-            android:parentActivityName="com.voicetranslator.MainActivity" />
+            android:parentActivityName="com.niv.aivoicetranslator.MainActivity" />
 
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
@@ -114,7 +114,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.voicetranslator.mobileadsinitprovider"
+            android:authorities="com.niv.aivoicetranslator.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -150,7 +150,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.voicetranslator.androidx-startup"
+            android:authorities="com.niv.aivoicetranslator.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

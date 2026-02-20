@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.voicetranslator.app-mergeReleaseResources-52:/values-si/values-si.xml",
+            "outputFile": "com.niv.aivoicetranslator.app-mergeReleaseResources-52:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-3/d684fab237f25d34581a0899340fc358/transformed/play-services-basement-18.2.0/res/values-si/values.xml",

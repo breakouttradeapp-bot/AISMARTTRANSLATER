@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.voicetranslator'
+    namespace 'com.niv.aivoicetranslator'
     compileSdk 34
 
     // ===== SIGNING CONFIG =====
@@ -18,7 +18,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.voicetranslator"
+        applicationId "com.niv.aivoicetranslator"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -26,8 +26,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "RAPID_API_KEY", '"2c482e59eemsh84b3ee988562f35p1da2bfjsn9d541cf8e4f8"'
-        buildConfigField "String", "ADMOB_APP_ID", '"ca-app-pub-3940256099942544~3347511713"'
+        buildConfigField "String", "RAPID_API_KEY", "\"2c482e59eemsh84b3ee988562f35p1da2bfjsn9d541cf8e4f8\""
+        buildConfigField "String", "ADMOB_APP_ID", "\"ca-app-pub-3940256099942544~3347511713\""
     }
 
     buildTypes {
@@ -37,8 +37,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
-            buildConfigField "String", "RAPID_API_KEY", '"2c482e59eemsh84b3ee988562f35p1da2bfjsn9d541cf8e4f8"'
-            buildConfigField "String", "ADMOB_APP_ID", '"YOUR_ADMOB_APP_ID_HERE"'
+            buildConfigField "String", "RAPID_API_KEY", "\"2c482e59eemsh84b3ee988562f35p1da2bfjsn9d541cf8e4f8\""
+            buildConfigField "String", "ADMOB_APP_ID", "\"ca-app-pub-3940256099942544~3347511713\""
         }
         debug {
             debuggable true
